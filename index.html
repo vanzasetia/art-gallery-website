@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Frontend Mentor | Art gallery website</title>
+    <script>
+      document.querySelector("html").removeAttribute("class");
+    </script>
+    <!-- 
+    Directly used the preloaded font family
+    to prevent producing warning messages in the console
+    -->
+    <!-- prettier-ignore -->
+    <style>@font-face{font-family:"Big Shoulders Display";font-style:normal;font-weight:900;font-display:swap;src:local("Big Shoulders Display"), local("Big Shoulders Display Black"), local("BigShouldersDisplay Black"), local("BigShouldersDisplay-Black"), url("/fonts/BigShouldersDisplayBlack.woff2") format("woff2"), url("/fonts/BigShouldersDisplayBlack.woff") format("woff")}@font-face{font-family:"Big Shoulders Display";font-style:normal;font-weight:800;font-display:swap;src:local("Big Shoulders Display"), local("Big Shoulders Display ExtraBold"), local("BigShouldersDisplay ExtraBold"), local("BigShouldersDisplay-ExtraBold"), url("/fonts/BigShouldersDisplayExtraBold.woff2") format("woff2"), url("/fonts/BigShouldersDisplayExtraBold.woff") format("woff")}@font-face{font-family:"Outfit";font-style:normal;font-weight:300;font-display:swap;src:local("Outfit"), local("Outfit Light"), local("Outfit Light"), local("Outfit-Light"), url("/fonts/OutfitLight.woff2") format("woff2"), url("/fonts/OutfitLight.woff") format("woff")}</style>
+    <link rel="stylesheet" href="/" />
+    <!-- Preload Font Family To Prevent Shifting Layout -->
+    <link
+      rel="preload"
+      href="/fonts/BigShouldersDisplayBlack.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/BigShouldersDisplayExtraBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/OutfitLight.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- Favicons -->
+    <link rel="icon" href="/images/frontendmentor.png" />
+    <link
+      rel="apple-touch-icon"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="This two-page art gallery project is perfect for me who is ready to branch out beyond single landing pages. There are some particularly interesting layout challenges!"
+    />
+    <meta
+      name="url"
+      content="https://officialartgallery.netlify.app/"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Frontend Mentor | Art gallery website"
+    />
+    <meta property="og:site_name" content="Modern Art Gallery" />
+    <meta
+      property="og:description"
+      content="This two-page art gallery project is perfect for me who is ready to branch out beyond single landing pages. There are some particularly interesting layout challenges!"
+    />
+    <meta
+      property="og:url"
+      content="https://officialartgallery.netlify.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://officialartgallery.netlify.app/design/desktop-design.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vanzasetia" />
+    <meta name="twitter:creator" content="@vanzasetia" />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google" content="notranslate" />
+    <link
+      rel="canonical"
+      href="https://officialartgallery.netlify.app/"
+    />
+    <link
+      rel="author"
+      href="https://officialartgallery.netlify.app/humans.txt"
+    />
+  </head>
+  <body dir="ltr">
+    <noscript class="noscript">
+      <div>
+        <p class="noscript__text">
+          You have found a mysterious page.
+        </p>
+        <p class="noscript__text">
+          To escape from this, please enable JavaScript.
+        </p>
+      </div>
+    </noscript>
+    <main></main>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>
