@@ -26,3 +26,8 @@
   }
 }
 
+@mixin prefers-motion() {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}
