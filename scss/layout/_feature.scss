@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.feature {
+  margin: rem(120) 0;
+}
+
+.feature .container--grid {
+  gap: rem(16);
+}
+
+.feature__text {
+  margin: rem(9) 0 rem(16);
+}
+
+.feature__title {
+  margin-bottom: rem(21);
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: $black;
+  font-size: rem(50);
+}

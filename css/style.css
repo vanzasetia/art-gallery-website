@@ -157,12 +157,13 @@ html {
 
 main,
 footer {
+  color: #151515;
   font: 300 1.125rem/1.5 "Outfit", sans-serif;
 }
 
 h1,
 h2 {
-  font-family: "Big Shoulder Display", sans-serif;
+  font-family: "Big Shoulders Display", sans-serif;
   font-weight: 900;
 }
 
@@ -256,4 +257,159 @@ svg path {
     opacity: 0;
     animation: fade-in 500ms ease-in-out 1000ms forwards;
   }
+}
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 1.5rem 2rem;
+  overflow-x: visible;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.225rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  .button {
+    transition: background-color 300ms ease-in-out;
+  }
+}
+
+.button--black {
+  background-color: #151515;
+  color: white;
+}
+.button--black:hover, .button--black:active {
+  background-color: #d5966c;
+}
+.button--black:focus-visible, .button--black:focus {
+  outline: 0.1875rem dotted #151515;
+  outline-offset: 0.3125rem;
+}
+
+.button--black:hover .button__icon,
+.button--black:active .button__icon {
+  background-color: #151515;
+}
+
+.button--next {
+  padding: 1.5rem 5.5rem 1.5rem 2rem;
+}
+
+.button--previous {
+  padding: 1.5rem 2rem 1.5rem 5.5rem;
+}
+
+.button__icon {
+  display: flex;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #d5966c;
+  width: 3.5rem;
+  height: 100%;
+  transition: inherit;
+}
+
+.button__icon--right {
+  right: 0;
+}
+
+.button__icon--left {
+  left: 0;
+}
+
+.card {
+  padding: 3rem 1.5rem;
+}
+
+.card__title {
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-size: 3.125rem;
+}
+
+.card--black {
+  background-color: #151515;
+  color: white;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.hero__title {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-size: 3.75rem;
+}
+
+.hero__description {
+  margin-bottom: 2rem;
+}
+
+.feature {
+  margin: 7.5rem 0;
+}
+
+.feature .container--grid {
+  gap: 1rem;
+}
+
+.feature__text {
+  margin: 0.5625rem 0 1rem;
+}
+
+.feature__title {
+  margin-bottom: 1.3125rem;
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: #151515;
+  font-size: 3.125rem;
+}
+
+.footer--black {
+  background-color: #151515;
+  color: white;
+}
+
+.footer .container {
+  padding: 3rem 2rem;
+}
+
+.footer__home {
+  display: inline-block;
+}
+.footer__home:focus-visible, .footer__home:focus {
+  outline: 0.1875rem dotted white;
+  outline-offset: 0.3125rem;
+}
+
+.footer__description {
+  margin: 2.375rem 0;
+}
+
+.footer__list {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer__link {
+  color: white;
+}
+.footer__link:focus-visible, .footer__link:focus {
+  outline: 0.1875rem dotted white;
+  outline-offset: 0.3125rem;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  .footer__link {
+    transition: color 300ms ease-in-out;
+  }
+}
+.footer__link:hover, .footer__link:active {
+  color: #d5966c;
 }

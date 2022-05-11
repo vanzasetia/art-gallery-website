@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.card {
+  padding: rem(48) rem(24);
+}
+
+.card__title {
+  margin-bottom: rem(24);
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-size: rem(50);
+}
+
+.card--black {
+  background-color: $black;
+  color: $white;
+}

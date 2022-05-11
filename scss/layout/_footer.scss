@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.footer--black {
+  background-color: $black;
+  color: $white;
+}
+
+.footer .container {
+  padding: rem(48) rem(32);
+}
+
+.footer__home {
+  display: inline-block;
+
+  @include focus-visible($white);
+}
+
+.footer__description {
+  margin: rem(38) 0;
+}
+
+.footer__list {
+  display: flex;
+  gap: rem(20);
+}
+
+.footer__link {
+  color: $white;
+
+  @include focus-visible($white);
+
+  @include prefers-motion {
+    transition: color 300ms ease-in-out;
+  }
+
+  @include on-event {
+    color: $gold;
+  }
+}

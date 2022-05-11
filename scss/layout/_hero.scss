@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.hero__title {
+  margin: rem(32) 0;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-size: rem(60);
+}
+
+.hero__description {
+  margin-bottom: rem(32);
+}

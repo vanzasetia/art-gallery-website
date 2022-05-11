@@ -1,0 +1,70 @@
+@use "../abstracts" as *;
+$-button-icon-width: rem(56);
+$-button-padding-x-axis: rem(32);
+
+.button {
+  display: inline-block;
+  position: relative;
+  padding: rem(24) rem(32);
+  overflow-x: visible;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: rem(3.6);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: rem(20);
+  font-weight: 800;
+
+  @include prefers-motion {
+    transition: background-color 300ms ease-in-out;
+  }
+}
+
+.button--black {
+  background-color: $black;
+  color: $white;
+
+  @include on-event {
+    background-color: $gold;
+  }
+
+  @include focus-visible($black);
+}
+
+.button--black:hover .button__icon,
+.button--black:active .button__icon {
+  background-color: $black;
+}
+
+.button--next {
+  $-button-next-padding-right: $-button-icon-width +
+    $-button-padding-x-axis;
+
+  padding: rem(24) $-button-next-padding-right rem(24) rem(32);
+}
+
+.button--previous {
+  $-button-next-padding-left: $-button-icon-width +
+    $-button-padding-x-axis;
+
+  padding: rem(24) rem(32) rem(24) $-button-next-padding-left;
+}
+
+.button__icon {
+  display: flex;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: $gold;
+  width: rem(56);
+  height: 100%;
+  transition: inherit;
+}
+
+.button__icon--right {
+  right: 0;
+}
+
+.button__icon--left {
+  left: 0;
+}
