@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -56,8 +58,7 @@ html {
 
 main,
 footer {
-  // Is the line height 1.2 (123%) or 1.5 (28px / 18px)
-  font: 300/1.5 "Outfit", sans-serif;
+  font: 300 #{rem(18)}/ 1.5 "Outfit", sans-serif;
 }
 
 h1,
