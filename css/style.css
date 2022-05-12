@@ -3,8 +3,8 @@
 \*------------------------------------*/
 /*  Modern CSS reset - https://piccalil.li/blog/a-modern-css-reset/ */
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -88,8 +88,8 @@ video {
  * Remove default fieldset styles.
  */
 fieldset {
-  border: 0;
   margin: 0;
+  border: 0;
   padding: 0;
 }
 
@@ -102,8 +102,8 @@ textarea {
 
 @media (prefers-reduced-motion: reduce) {
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     background-attachment: initial !important;
     transition-delay: 0s !important;
     transition-duration: 0s !important;
@@ -193,8 +193,8 @@ img {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
  */
-input[type=text],
-input[type=number],
+input[type="text"],
+input[type="number"],
 select,
 textarea {
   font-size: 1rem;
@@ -234,7 +234,8 @@ svg path {
   align-items: center;
   justify-content: center;
   z-index: 99;
-  background: #3a2046 url("../svg/exclamation-triangle.svg") no-repeat center center/20rem;
+  background: #3a2046 url("../svg/exclamation-triangle.svg") no-repeat
+    center center/20rem;
   padding: 0.625rem;
   width: 100%;
   min-height: 100vh;
@@ -280,10 +281,12 @@ svg path {
   background-color: #151515;
   color: white;
 }
-.button--black:hover, .button--black:active {
+.button--black:hover,
+.button--black:active {
   background-color: #d5966c;
 }
-.button--black:focus-visible, .button--black:focus {
+.button--black:focus-visible,
+.button--black:focus {
   outline: 0.1875rem dotted #151515;
   outline-offset: 0.3125rem;
 }
@@ -384,7 +387,8 @@ svg path {
 .footer__home {
   display: inline-block;
 }
-.footer__home:focus-visible, .footer__home:focus {
+.footer__home:focus-visible,
+.footer__home:focus {
   outline: 0.1875rem dotted white;
   outline-offset: 0.3125rem;
 }
@@ -401,7 +405,8 @@ svg path {
 .footer__link {
   color: white;
 }
-.footer__link:focus-visible, .footer__link:focus {
+.footer__link:focus-visible,
+.footer__link:focus {
   outline: 0.1875rem dotted white;
   outline-offset: 0.3125rem;
 }
@@ -410,6 +415,7 @@ svg path {
     transition: color 300ms ease-in-out;
   }
 }
-.footer__link:hover, .footer__link:active {
+.footer__link:hover,
+.footer__link:active {
   color: #d5966c;
 }
