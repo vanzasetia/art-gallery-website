@@ -399,6 +399,10 @@ svg path {
     background-size: 33.75rem 50rem;
     padding: 0;
     min-height: 50rem;
+    /*
+     * 1. It makes the text white. Otherwise
+     *    the text would be gray instead.
+     */
   }
   .hero::after {
     content: "";
@@ -407,6 +411,7 @@ svg path {
     left: 0;
     z-index: -1;
     background-color: black;
+    /* 1 */
     width: 33.75rem;
     height: 50rem;
   }
