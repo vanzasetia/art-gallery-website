@@ -1,12 +1,40 @@
 @use "../abstracts" as *;
 
+.footer {
+  padding: rem(48) 0;
+
+  @include breakpoint-up("tiny") {
+    padding: rem(56) 0;
+  }
+
+  @include breakpoint-up("very-small") {
+    padding: rem(80) 0;
+  }
+}
+
 .footer--black {
   background-color: $black;
   color: $white;
 }
 
 .footer .container {
-  padding: rem(48) rem(32);
+  padding: 0 rem(32);
+
+  @include breakpoint-up("tiny") {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 rem(40);
+  }
+
+  @include breakpoint-up("very-small") {
+    gap: rem(60);
+    padding: 0 rem(80);
+  }
+
+  @include breakpoint-up("small") {
+    padding: 0;
+  }
 }
 
 .footer__home {
@@ -17,6 +45,15 @@
 
 .footer__description {
   margin: rem(38) 0;
+
+  @include breakpoint-up("tiny") {
+    flex-basis: rem(280);
+    margin: 0;
+  }
+
+  @include breakpoint-up("very-small") {
+    flex-basis: rem(430);
+  }
 }
 
 .footer__list {

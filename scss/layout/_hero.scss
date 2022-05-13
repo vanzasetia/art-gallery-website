@@ -1,12 +1,106 @@
 @use "../abstracts" as *;
 
+$-hero-desktop-background-width: rem(540);
+$-hero-desktop-background-height: rem(800);
+
+.hero {
+  @include breakpoint-up("tiny") {
+    position: relative;
+    background: url("../images/tablet/image-hero.jpg") no-repeat top
+      left/#{rem(437)} rem(700);
+    padding: rem(150) rem(40);
+
+    @media (min-resolution: 2x) {
+      background-image: url("../images/tablet/image-hero@2x.jpg");
+    }
+  }
+
+  @include breakpoint-up("very-small") {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-position: top left 50%;
+    background-size: $-hero-desktop-background-width
+      $-hero-desktop-background-height;
+    padding: 0;
+    min-height: $-hero-desktop-background-height;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: rgb(0, 0, 0);
+      width: $-hero-desktop-background-width;
+      height: $-hero-desktop-background-height;
+    }
+  }
+
+  @include breakpoint-up("small") {
+    margin: 0 auto;
+    max-width: rem(1440);
+  }
+}
+
+.hero .container {
+  @include breakpoint-up("tiny") {
+    margin: 0 0 0 auto;
+    padding: 0;
+    max-width: rem(330);
+  }
+
+  @include breakpoint-up("very-small") {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: rem(190) rem(20) 0 rem(20);
+    max-width: rem(1100);
+  }
+
+  @include breakpoint-up("small") {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.hero__container {
+  @include breakpoint-up("very-small") {
+    flex-basis: rem(350);
+  }
+}
+
 .hero__title {
   margin: rem(32) 0;
   text-transform: uppercase;
   line-height: 0.9;
   font-size: rem(60);
+
+  @include breakpoint-up("tiny") {
+    margin-top: 0;
+    margin-bottom: rem(48);
+    font-size: rem(70);
+  }
+
+  @include breakpoint-up("very-small") {
+    max-width: rem(450);
+    color: $white;
+    font-size: rem(96);
+
+    mix-blend-mode: difference;
+  }
+}
+
+.hero__image {
+  width: 100%;
+
+  @include breakpoint-up("tiny") {
+    display: none;
+  }
 }
 
 .hero__description {
   margin-bottom: rem(32);
+
+  @include breakpoint-up("tiny") {
+    margin-bottom: rem(48);
+  }
 }

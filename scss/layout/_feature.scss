@@ -2,14 +2,93 @@
 
 .feature {
   margin: rem(120) 0;
+
+  @include breakpoint-up("very-small") {
+    margin: rem(180) 0;
+  }
 }
 
-.feature .container--grid {
+.feature .container {
+  display: grid;
   gap: rem(16);
+
+  @include breakpoint-up("tiny") {
+    grid-template-areas:
+      "card-white image-grid-1 image-grid-1"
+      "image-grid-2 image-grid-2 image-grid-3"
+      "image-grid-2 image-grid-2 card-black";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr rem(160) 1fr;
+    gap: rem(11);
+    align-items: stretch;
+  }
+
+  @include breakpoint-up("very-small") {
+    gap: rem(30);
+  }
 }
 
 .feature__text {
   margin: rem(9) 0 rem(16);
+
+  @include breakpoint-up("tiny") {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: rem(220);
+  }
+
+  @include breakpoint-up("very-small") {
+    max-width: rem(350);
+  }
+}
+
+.feature__image {
+  width: 100%;
+
+  @include breakpoint-up("tiny") {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.feature__grid-1 {
+  @include breakpoint-up("tiny") {
+    grid-area: image-grid-1;
+  }
+}
+
+.feature__grid-2 {
+  @include breakpoint-up("tiny") {
+    grid-area: card-white;
+  }
+}
+
+.feature__grid-3 {
+  @include breakpoint-up("tiny") {
+    grid-area: image-grid-2;
+  }
+}
+
+.feature__grid-4 {
+  @include breakpoint-up("tiny") {
+    grid-area: image-grid-3;
+  }
+}
+
+.feature__grid-5 {
+  @include breakpoint-up("tiny") {
+    grid-area: card-black;
+  }
+}
+
+.feature .card {
+  @include breakpoint-up("tiny") {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .feature__title {
@@ -18,4 +97,8 @@
   line-height: 0.9;
   color: $black;
   font-size: rem(50);
+
+  @include breakpoint-up("very-small") {
+    font-size: rem(60);
+  }
 }

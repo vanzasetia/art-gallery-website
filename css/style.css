@@ -3,8 +3,8 @@
 \*------------------------------------*/
 /*  Modern CSS reset - https://piccalil.li/blog/a-modern-css-reset/ */
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -88,8 +88,8 @@ video {
  * Remove default fieldset styles.
  */
 fieldset {
-  margin: 0;
   border: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -102,8 +102,8 @@ textarea {
 
 @media (prefers-reduced-motion: reduce) {
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     background-attachment: initial !important;
     transition-delay: 0s !important;
     transition-duration: 0s !important;
@@ -161,6 +161,12 @@ footer {
   font: 300 1.125rem/1.5 "Outfit", sans-serif;
 }
 
+@media screen and (min-width: 56.25em) {
+  main {
+    font-size: 1.375rem;
+  }
+}
+
 h1,
 h2 {
   font-family: "Big Shoulders Display", sans-serif;
@@ -193,8 +199,8 @@ img {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
  */
-input[type="text"],
-input[type="number"],
+input[type=text],
+input[type=number],
 select,
 textarea {
   font-size: 1rem;
@@ -234,8 +240,7 @@ svg path {
   align-items: center;
   justify-content: center;
   z-index: 99;
-  background: #3a2046 url("../svg/exclamation-triangle.svg") no-repeat
-    center center/20rem;
+  background: #3a2046 url("../svg/exclamation-triangle.svg") no-repeat center center/20rem;
   padding: 0.625rem;
   width: 100%;
   min-height: 100vh;
@@ -281,12 +286,10 @@ svg path {
   background-color: #151515;
   color: white;
 }
-.button--black:hover,
-.button--black:active {
+.button--black:hover, .button--black:active {
   background-color: #d5966c;
 }
-.button--black:focus-visible,
-.button--black:focus {
+.button--black:focus-visible, .button--black:focus {
   outline: 0.1875rem dotted #151515;
   outline-offset: 0.3125rem;
 }
@@ -327,12 +330,27 @@ svg path {
 .card {
   padding: 3rem 1.5rem;
 }
+@media screen and (min-width: 44.375em) {
+  .card {
+    padding: 5.3125rem 1.75rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .card {
+    padding: 4.0625rem 3rem;
+  }
+}
 
 .card__title {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   line-height: 0.9;
   font-size: 3.125rem;
+}
+@media screen and (min-width: 56.25em) {
+  .card__title {
+    font-size: 3.75rem;
+  }
 }
 
 .card--black {
@@ -341,7 +359,92 @@ svg path {
 }
 
 .container {
+  margin: 0 auto;
   padding: 0 1rem;
+  max-width: 37.5rem;
+}
+@media screen and (min-width: 44.375em) {
+  .container {
+    padding: 0 2.5rem;
+    max-width: 68.75rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .container {
+    padding: 5rem;
+  }
+}
+@media screen and (min-width: 77.5em) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .hero {
+    position: relative;
+    background: url("../images/tablet/image-hero.jpg") no-repeat top left/27.3125rem 43.75rem;
+    padding: 9.375rem 2.5rem;
+  }
+}
+@media screen and (min-width: 44.375em) and (min-resolution: 2x) {
+  .hero {
+    background-image: url("../images/tablet/image-hero@2x.jpg");
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .hero {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-position: top left 50%;
+    background-size: 33.75rem 50rem;
+    padding: 0;
+    min-height: 50rem;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    width: 33.75rem;
+    height: 50rem;
+  }
+}
+@media screen and (min-width: 77.5em) {
+  .hero {
+    margin: 0 auto;
+    max-width: 90rem;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .hero .container {
+    margin: 0 0 0 auto;
+    padding: 0;
+    max-width: 20.625rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 11.875rem 1.25rem 0 1.25rem;
+    max-width: 68.75rem;
+  }
+}
+@media screen and (min-width: 77.5em) {
+  .hero .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 56.25em) {
+  .hero__container {
+    flex-basis: 21.875rem;
+  }
 }
 
 .hero__title {
@@ -350,21 +453,132 @@ svg path {
   line-height: 0.9;
   font-size: 3.75rem;
 }
+@media screen and (min-width: 44.375em) {
+  .hero__title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-size: 4.375rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .hero__title {
+    max-width: 28.125rem;
+    color: white;
+    font-size: 6rem;
+    mix-blend-mode: difference;
+  }
+}
+
+.hero__image {
+  width: 100%;
+}
+@media screen and (min-width: 44.375em) {
+  .hero__image {
+    display: none;
+  }
+}
 
 .hero__description {
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 44.375em) {
+  .hero__description {
+    margin-bottom: 3rem;
+  }
 }
 
 .feature {
   margin: 7.5rem 0;
 }
+@media screen and (min-width: 56.25em) {
+  .feature {
+    margin: 11.25rem 0;
+  }
+}
 
-.feature .container--grid {
+.feature .container {
+  display: grid;
   gap: 1rem;
+}
+@media screen and (min-width: 44.375em) {
+  .feature .container {
+    grid-template-areas: "card-white image-grid-1 image-grid-1" "image-grid-2 image-grid-2 image-grid-3" "image-grid-2 image-grid-2 card-black";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 10rem 1fr;
+    gap: 0.6875rem;
+    align-items: stretch;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .feature .container {
+    gap: 1.875rem;
+  }
 }
 
 .feature__text {
   margin: 0.5625rem 0 1rem;
+}
+@media screen and (min-width: 44.375em) {
+  .feature__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 13.75rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .feature__text {
+    max-width: 21.875rem;
+  }
+}
+
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 44.375em) {
+  .feature__image {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .feature__grid-1 {
+    grid-area: image-grid-1;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .feature__grid-2 {
+    grid-area: card-white;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .feature__grid-3 {
+    grid-area: image-grid-2;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .feature__grid-4 {
+    grid-area: image-grid-3;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .feature__grid-5 {
+    grid-area: card-black;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .feature .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .feature__title {
@@ -374,6 +588,25 @@ svg path {
   color: #151515;
   font-size: 3.125rem;
 }
+@media screen and (min-width: 56.25em) {
+  .feature__title {
+    font-size: 3.75rem;
+  }
+}
+
+.footer {
+  padding: 3rem 0;
+}
+@media screen and (min-width: 44.375em) {
+  .footer {
+    padding: 3.5rem 0;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .footer {
+    padding: 5rem 0;
+  }
+}
 
 .footer--black {
   background-color: #151515;
@@ -381,20 +614,49 @@ svg path {
 }
 
 .footer .container {
-  padding: 3rem 2rem;
+  padding: 0 2rem;
+}
+@media screen and (min-width: 44.375em) {
+  .footer .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .footer .container {
+    gap: 3.75rem;
+    padding: 0 5rem;
+  }
+}
+@media screen and (min-width: 77.5em) {
+  .footer .container {
+    padding: 0;
+  }
 }
 
 .footer__home {
   display: inline-block;
 }
-.footer__home:focus-visible,
-.footer__home:focus {
+.footer__home:focus-visible, .footer__home:focus {
   outline: 0.1875rem dotted white;
   outline-offset: 0.3125rem;
 }
 
 .footer__description {
   margin: 2.375rem 0;
+}
+@media screen and (min-width: 44.375em) {
+  .footer__description {
+    flex-basis: 17.5rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .footer__description {
+    flex-basis: 26.875rem;
+  }
 }
 
 .footer__list {
@@ -405,8 +667,7 @@ svg path {
 .footer__link {
   color: white;
 }
-.footer__link:focus-visible,
-.footer__link:focus {
+.footer__link:focus-visible, .footer__link:focus {
   outline: 0.1875rem dotted white;
   outline-offset: 0.3125rem;
 }
@@ -415,7 +676,6 @@ svg path {
     transition: color 300ms ease-in-out;
   }
 }
-.footer__link:hover,
-.footer__link:active {
+.footer__link:hover, .footer__link:active {
   color: #d5966c;
 }

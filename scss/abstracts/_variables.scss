@@ -7,12 +7,12 @@ $dark-grey: rgb(68, 68, 68);
 // Breakpoints
 // Note: If the user font-size setting is 16px, then this 'em' is equal to this in 'px'
 $breakpoints-up: (
-  "tiny": 46.875em, // => 750px
-  "very-small": 64em, // => 1024px
-  "small": 80em // => 1280px
+  "tiny": 44.375em, // 710px
+  "very-small": 56.25em, // 900px
+  "small": 77.5em, // 1240px
 );
 $breakpoints-down: (
-  "tiny": 46.8125em, // => 749px
-  "very-small": 63.9375em, // => 1023px
-  "small": 79.9375em // => 1279px
+  "tiny": 44.3125em, // 709px
+  "very-small": 56.1875em, // 899px
+  "small": 77.4375em, // 1239px
 );

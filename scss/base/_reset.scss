@@ -62,6 +62,12 @@ footer {
   font: 300 #{rem(18)}/ 1.5 "Outfit", sans-serif;
 }
 
+main {
+  @include breakpoint-up("very-small") {
+    font-size: rem(22);
+  }
+}
+
 h1,
 h2 {
   font-family: "Big Shoulders Display", sans-serif;
