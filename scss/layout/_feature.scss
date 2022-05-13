@@ -17,7 +17,7 @@
       "card-white image-grid-1 image-grid-1"
       "image-grid-2 image-grid-2 image-grid-3"
       "image-grid-2 image-grid-2 card-black";
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 1fr rem(160) 1fr;
     gap: rem(11);
     align-items: stretch;
