@@ -17,6 +17,11 @@
   color: $white;
 }
 
+.footer--gold {
+  background-color: $gold;
+  color: $black;
+}
+
 .footer .container {
   padding: 0 rem(32);
 
@@ -56,6 +61,10 @@
   }
 }
 
+.footer--gold .footer__home {
+  @include focus-visible($black);
+}
+
 .footer__list {
   display: flex;
   gap: rem(20);
@@ -72,5 +81,15 @@
 
   @include on-event {
     color: $gold;
+  }
+}
+
+.footer--gold .footer__link {
+  color: $black;
+
+  @include focus-visible($black);
+
+  @include on-event {
+    color: $white;
   }
 }

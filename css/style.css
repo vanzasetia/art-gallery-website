@@ -618,6 +618,11 @@ svg path {
   color: white;
 }
 
+.footer--gold {
+  background-color: #d5966c;
+  color: #151515;
+}
+
 .footer .container {
   padding: 0 2rem;
 }
@@ -664,6 +669,11 @@ svg path {
   }
 }
 
+.footer--gold .footer__home:focus-visible, .footer--gold .footer__home:focus {
+  outline: 0.1875rem dotted #151515;
+  outline-offset: 0.3125rem;
+}
+
 .footer__list {
   display: flex;
   gap: 1.25rem;
@@ -683,4 +693,15 @@ svg path {
 }
 .footer__link:hover, .footer__link:active {
   color: #d5966c;
+}
+
+.footer--gold .footer__link {
+  color: #151515;
+}
+.footer--gold .footer__link:focus-visible, .footer--gold .footer__link:focus {
+  outline: 0.1875rem dotted #151515;
+  outline-offset: 0.3125rem;
+}
+.footer--gold .footer__link:hover, .footer--gold .footer__link:active {
+  color: white;
 }
