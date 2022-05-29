@@ -371,7 +371,7 @@ svg path {
 }
 @media screen and (min-width: 56.25em) {
   .container {
-    padding: 5rem;
+    padding: 0 5rem;
   }
 }
 @media screen and (min-width: 77.5em) {
@@ -597,6 +597,98 @@ svg path {
   .feature__title {
     font-size: 3.75rem;
   }
+}
+
+.map {
+  position: relative;
+}
+
+.map .map__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+@media screen and (min-width: 44.375em) {
+  .map .map__container {
+    padding: 0 2.5rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .map .map__container {
+    padding: 0 5rem;
+  }
+}
+
+.map__image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.area {
+  background-color: #151515;
+  color: white;
+}
+
+.area {
+  padding: 3.5rem 0;
+}
+@media screen and (min-width: 44.375em) {
+  .area {
+    padding: 5.5rem 0;
+  }
+}
+
+@media screen and (min-width: 44.375em) {
+  .area .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.area__title {
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 3.125rem;
+}
+@media screen and (min-width: 44.375em) {
+  .area__title {
+    flex-basis: 14.0625rem;
+    font-size: 3.4375rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .area__title {
+    flex-basis: 21.875rem;
+    font-size: 4.375rem;
+  }
+}
+
+.area__wrapper {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 44.375em) {
+  .area__wrapper {
+    flex-basis: 25rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .area__wrapper {
+    flex-basis: 33.75rem;
+  }
+}
+
+.area__street {
+  text-transform: uppercase;
+  color: #d5966c;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.area__details {
+  margin: 1.25rem 0;
 }
 
 .footer {

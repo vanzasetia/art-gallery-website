@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.map {
+  position: relative;
+}
+
+.map .map__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+
+  @include breakpoint-up("tiny") {
+    padding: 0 rem(40);
+  }
+
+  @include breakpoint-up("very-small") {
+    padding: 0 rem(80);
+  }
+}
+
+.map__image {
+  object-fit: cover;
+  width: 100%;
+}
