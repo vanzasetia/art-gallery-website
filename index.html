@@ -17,7 +17,7 @@
     -->
     <!-- prettier-ignore -->
     <style>@font-face{font-family:"Big Shoulders Display";font-style:normal;font-weight:900;font-display:swap;src:local("Big Shoulders Display"), local("Big Shoulders Display Black"), local("BigShouldersDisplay Black"), local("BigShouldersDisplay-Black"), url("/fonts/BigShouldersDisplayBlack.woff2") format("woff2"), url("/fonts/BigShouldersDisplayBlack.woff") format("woff")}@font-face{font-family:"Big Shoulders Display";font-style:normal;font-weight:800;font-display:swap;src:local("Big Shoulders Display"), local("Big Shoulders Display ExtraBold"), local("BigShouldersDisplay ExtraBold"), local("BigShouldersDisplay-ExtraBold"), url("/fonts/BigShouldersDisplayExtraBold.woff2") format("woff2"), url("/fonts/BigShouldersDisplayExtraBold.woff") format("woff")}@font-face{font-family:"Outfit";font-style:normal;font-weight:300;font-display:swap;src:local("Outfit"), local("Outfit Light"), local("Outfit Light"), local("Outfit-Light"), url("/fonts/OutfitLight.woff2") format("woff2"), url("/fonts/OutfitLight.woff") format("woff")}</style>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
     <!-- Preload Font Family To Prevent Shifting Layout -->
     <link
       rel="preload"
@@ -295,12 +295,12 @@
         </ul>
       </div>
     </footer>
-    <script>
+    <!-- <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker.register("/service-worker.js");
         });
       }
-    </script>
+    </script> -->
   </body>
 </html>
