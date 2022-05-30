@@ -51,6 +51,7 @@ These are the guidelines that I follow when I write the code.
 - [Beyond Basic Alt Text – Charts, Maps, and Diagrams | equidox](https://equidox.co/blog/beyond-basic-alt-text-charts-maps-and-diagrams/) - it gives me an idea to write alternative text for the map image.
 - [Avoid these common alt-text mistakes - The Big Hack](https://bighack.org/avoid-these-mistakes-when-writing-alt-text-descriptions-for-images/)
 ### Tools
+- [OpenStreetMap](https://www.openstreetmap.org/) - get the coordinate numbers for 99 King Street, Newport, USA.
 - [Canva](https://www.canva.com/) - design the banner
 - [Squoosh](https://squoosh.app/) - optimize images
 - [Site shot](https://www.site-shot.com/) - take screenshot of the site
