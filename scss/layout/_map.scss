@@ -8,18 +8,32 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   padding: 0;
-
   @include breakpoint-up("tiny") {
     padding: 0 rem(40);
   }
-
   @include breakpoint-up("very-small") {
     padding: 0 rem(80);
   }
 }
 
-.map__image {
-  object-fit: cover;
+.map__leaflet {
+  position: relative;
+  z-index: 1;
   width: 100%;
+  min-height: rem(400);
+  @include breakpoint-up("tiny") {
+    min-height: rem(550);
+  }
+
+  /*
+   * 1. Allow the users to scroll. If the map
+   *    fill the entire screen then the user
+   *    can only scroll on the map. So, that's
+   *    why I change the `z-index`.
+   */
+  @media screen and (orientation: landscape) {
+    z-index: -1; /* 1 */
+  }
 }

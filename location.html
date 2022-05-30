@@ -11,6 +11,11 @@
     <script>
       document.querySelector("html").removeAttribute("class");
     </script>
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin
+    ></script>
     <!-- 
     Directly used the preloaded font family
     to prevent producing warning messages in the console
@@ -18,6 +23,12 @@
     <!-- prettier-ignore -->
     <style>@font-face{font-family:"Big Shoulders Display";font-style:normal;font-weight:900;font-display:swap;src:local("Big Shoulders Display"), local("Big Shoulders Display Black"), local("BigShouldersDisplay Black"), local("BigShouldersDisplay-Black"), url("/fonts/BigShouldersDisplayBlack.woff2") format("woff2"), url("/fonts/BigShouldersDisplayBlack.woff") format("woff")}@font-face{font-family:"Big Shoulders Display";font-style:normal;font-weight:800;font-display:swap;src:local("Big Shoulders Display"), local("Big Shoulders Display ExtraBold"), local("BigShouldersDisplay ExtraBold"), local("BigShouldersDisplay-ExtraBold"), url("/fonts/BigShouldersDisplayExtraBold.woff2") format("woff2"), url("/fonts/BigShouldersDisplayExtraBold.woff") format("woff")}@font-face{font-family:"Outfit";font-style:normal;font-weight:300;font-display:swap;src:local("Outfit"), local("Outfit Light"), local("Outfit Light"), local("Outfit-Light"), url("/fonts/OutfitLight.woff2") format("woff2"), url("/fonts/OutfitLight.woff") format("woff")}</style>
     <link rel="stylesheet" href="/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin
+    />
     <!-- Preload Font Family To Prevent Shifting Layout -->
     <link
       rel="preload"
@@ -121,42 +132,7 @@
             </span>
           </a>
         </div>
-        <picture>
-          <source
-            srcset="
-              /images/desktop/image-map.jpg,
-              /images/desktop/image-map@2x.jpg 2x
-            "
-            media="(min-width: 56.25em)"
-          />
-          <source
-            srcset="
-              /images/tablet/image-map.jpg,
-              /images/tablet/image-map@2x.jpg 2x
-            "
-            media="(min-width: 40em)"
-          />
-          <source
-            srcset="
-              /images/mobile/image-map.webp,
-              /images/mobile/image-map@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              /images/mobile/image-map.jpg,
-              /images/mobile/image-map@2x.jpg 2x
-            "
-          />
-          <img
-            src="/images/mobile/image-map.jpg"
-            alt="Map of Modern Art Gallery"
-            class="map__image"
-            width="375"
-            height="550"
-          />
-        </picture>
+        <div id="js-map" class="map__leaflet"></div>
       </div>
       <div class="area">
         <div class="container">
@@ -219,12 +195,13 @@
         </ul>
       </div>
     </footer>
-    <!-- <script>
+    <script src="/js/map.min.js"></script>
+    <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker.register("/service-worker.js");
         });
       }
-    </script> -->
+    </script>
   </body>
 </html>
