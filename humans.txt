@@ -17,7 +17,7 @@ Twitter: @_mattstuddert
 From: London, England, United Kingdom
 
 /* SITE */
-Last update: 2022/05/01
+Last update: 2022/05/31
 Language: English
 Doctype: HTML5
 IDE: Visual Studio Code, Windows Terminal, PowerShell
