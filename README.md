@@ -62,7 +62,8 @@ My users should be able to:
 
 ### Links
 - [Live Review](https://officialartgallery.netlify.app/)
-- [Frontend Mentor Solution Page]()
+- [Live Review (no leaflet)](https://noleaflet.netlify.app/)
+- [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/art-gallery-website-leaflet-js-rJbPrss85)
 
 ### Screenshots
 
