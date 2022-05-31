@@ -10,9 +10,11 @@
   left: 0;
   z-index: 2;
   padding: 0;
+
   @include breakpoint-up("tiny") {
     padding: 0 rem(40);
   }
+
   @include breakpoint-up("very-small") {
     padding: 0 rem(80);
   }
@@ -23,6 +25,7 @@
   z-index: 1;
   width: 100%;
   min-height: rem(400);
+
   @include breakpoint-up("tiny") {
     min-height: rem(550);
   }
