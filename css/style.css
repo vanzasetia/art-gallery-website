@@ -748,6 +748,10 @@ svg path {
   }
 }
 
+.footer--attribution {
+  padding: 3rem 0;
+}
+
 .footer--black {
   background-color: rgb(21, 21, 21);
   color: rgb(255, 255, 255);
@@ -848,6 +852,6 @@ svg path {
 }
 
 .footer__attribution {
-  margin: 2.5rem 1.25rem 0 1.25rem;
+  margin: 0 1.25rem;
   text-align: center;
 }

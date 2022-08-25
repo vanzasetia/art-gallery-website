@@ -12,6 +12,10 @@
   }
 }
 
+.footer--attribution {
+  padding: rem(48) 0;
+}
+
 .footer--black {
   background-color: $black;
   color: $white;
@@ -95,6 +99,6 @@
 }
 
 .footer__attribution {
-  margin: rem(40) rem(20) 0 rem(20);
+  margin: 0 rem(20);
   text-align: center;
 }
