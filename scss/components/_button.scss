@@ -7,12 +7,12 @@ $-button-padding-x-axis: rem(32);
   position: relative;
   padding: rem(24) rem(32);
   overflow-x: visible;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: rem(3.6);
-  font-family: "Big Shoulders Display", sans-serif;
-  font-size: rem(20);
   font-weight: 800;
+  font-size: rem(20);
+  font-family: "Big Shoulders Display", sans-serif;
+  letter-spacing: rem(3.6);
+  text-decoration: none;
+  text-transform: uppercase;
 
   @include prefers-motion {
     transition: background-color 300ms ease-in-out;
@@ -53,12 +53,12 @@ $-button-padding-x-axis: rem(32);
   display: flex;
   position: absolute;
   top: 0;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  transition: inherit;
   background-color: $gold;
   width: rem(56);
   height: 100%;
-  transition: inherit;
 }
 
 .button__icon--right {

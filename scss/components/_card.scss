@@ -14,9 +14,9 @@
 
 .card__title {
   margin-bottom: rem(24);
-  text-transform: uppercase;
-  line-height: 0.9;
   font-size: rem(50);
+  line-height: 0.9;
+  text-transform: uppercase;
 
   @include breakpoint-up("very-small") {
     font-size: rem(60);

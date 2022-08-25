@@ -27,7 +27,6 @@ $-hero-desktop-background-height: rem(800);
      *    the text would be gray instead.
      */
     &::after {
-      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -35,6 +34,7 @@ $-hero-desktop-background-height: rem(800);
       background-color: rgb(0, 0, 0); /* 1 */
       width: $-hero-desktop-background-width;
       height: $-hero-desktop-background-height;
+      content: "";
     }
   }
 
@@ -73,9 +73,9 @@ $-hero-desktop-background-height: rem(800);
 
 .hero__title {
   margin: rem(32) 0;
-  text-transform: uppercase;
-  line-height: 0.9;
   font-size: rem(60);
+  line-height: 0.9;
+  text-transform: uppercase;
 
   @include breakpoint-up("tiny") {
     margin-top: 0;
@@ -84,11 +84,10 @@ $-hero-desktop-background-height: rem(800);
   }
 
   @include breakpoint-up("very-small") {
+    mix-blend-mode: difference;
     max-width: rem(450);
     color: $white;
     font-size: rem(96);
-
-    mix-blend-mode: difference;
   }
 }
 

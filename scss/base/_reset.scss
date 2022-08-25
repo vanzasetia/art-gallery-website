@@ -4,12 +4,12 @@
   *,
   *::before,
   *::after {
-    background-attachment: initial !important;
-    transition-delay: 0s !important;
-    transition-duration: 0s !important;
     animation-duration: 1ms !important;
     animation-delay: -1ms !important;
     animation-iteration-count: 1 !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    background-attachment: initial !important;
     scroll-behavior: auto !important;
   }
 }
@@ -44,10 +44,10 @@ html {
  * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
  */
 .sr-only {
-  position: absolute !important;
-  margin: -1px !important;
   -webkit-clip-path: inset(50%) !important;
+  position: absolute !important;
   clip-path: inset(50%) !important;
+  margin: -1px !important;
   border: 0 !important;
   padding: 0 !important;
   width: 1px !important;
@@ -70,8 +70,8 @@ main {
 
 h1,
 h2 {
-  font-family: "Big Shoulders Display", sans-serif;
   font-weight: 900;
+  font-family: "Big Shoulders Display", sans-serif;
 }
 
 p {

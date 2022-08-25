@@ -13,14 +13,14 @@
   gap: rem(16);
 
   @include breakpoint-up("tiny") {
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 1fr rem(160) 1fr;
     grid-template-areas:
       "card-white image-grid-1 image-grid-1"
       "image-grid-2 image-grid-2 image-grid-3"
       "image-grid-2 image-grid-2 card-black";
-    grid-template-rows: 1fr auto 1fr;
-    grid-template-columns: 1fr rem(160) 1fr;
-    gap: rem(11);
     align-items: stretch;
+    gap: rem(11);
   }
 
   @include breakpoint-up("very-small") {
@@ -48,8 +48,8 @@
   width: 100%;
 
   @include breakpoint-up("tiny") {
-    object-fit: cover;
     height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -93,10 +93,10 @@
 
 .feature__title {
   margin-bottom: rem(21);
-  text-transform: uppercase;
-  line-height: 0.9;
   color: $black;
   font-size: rem(50);
+  line-height: 0.9;
+  text-transform: uppercase;
 
   @include breakpoint-up("very-small") {
     font-size: rem(60);

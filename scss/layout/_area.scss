@@ -21,9 +21,9 @@
 }
 
 .area__title {
-  text-transform: uppercase;
-  line-height: 1;
   font-size: rem(50);
+  line-height: 1;
+  text-transform: uppercase;
 
   @include breakpoint-up("tiny") {
     flex-basis: rem(225);
@@ -50,11 +50,11 @@
 }
 
 .area__street {
-  text-transform: uppercase;
   color: $gold;
-  font-family: "Big Shoulders Display", sans-serif;
-  font-size: rem(32);
   font-weight: 900;
+  font-size: rem(32);
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
 }
 
 .area__details {

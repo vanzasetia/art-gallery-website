@@ -23,17 +23,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   z-index: 99;
   background: rgb(58, 32, 70) url("../svg/exclamation-triangle.svg")
     no-repeat center center/20rem;
   padding: 0.625rem;
   width: 100%;
   min-height: 100vh;
-  text-align: center;
   color: rgb(255, 255, 255);
   font: 700 2.4rem/1.2 sans-serif;
+  text-align: center;
 }
 
 @media screen and (min-width: 59.375em) {
