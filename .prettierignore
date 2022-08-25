@@ -9,7 +9,7 @@ images/
 favicons/
 icons/
 
-css/style.min.css
+css/*.min.css
 js/*.min.js
 
 LICENSE
