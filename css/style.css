@@ -15,14 +15,13 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
   min-height: 100vh;
   line-height: 1.5;
+  text-rendering: optimizeSpeed;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -105,11 +104,8 @@ textarea {
   *,
   *::before,
   *::after {
-    -webkit-animation-duration: 1ms !important;
     animation-duration: 1ms !important;
-    -webkit-animation-delay: -1ms !important;
     animation-delay: -1ms !important;
-    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-delay: 0s !important;
     transition-duration: 0s !important;
@@ -127,11 +123,6 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-}
-
-::-moz-selection {
-  background-color: rgb(22, 95, 204);
-  color: rgb(242, 242, 242);
 }
 
 ::selection {
@@ -223,15 +214,6 @@ svg path {
   fill: currentColor;
 }
 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -280,7 +262,6 @@ svg path {
 @media screen and (prefers-reduced-motion: no-preference) {
   .noscript__text {
     opacity: 0;
-    -webkit-animation: fade-in 500ms ease-in-out 1000ms forwards;
     animation: fade-in 500ms ease-in-out 1000ms forwards;
   }
 }
@@ -410,8 +391,7 @@ svg path {
     padding: 9.375rem 2.5rem;
   }
 }
-@media screen and (min-width: 44.375em) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 44.375em) and (min-resolution: 2x) {
+@media screen and (min-width: 44.375em) and (min-resolution: 2x) {
   .hero {
     background-image: url("../images/tablet/image-hero@2x.jpg");
   }
@@ -567,7 +547,6 @@ svg path {
 @media screen and (min-width: 44.375em) {
   .feature__image {
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
   }
 }
