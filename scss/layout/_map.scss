@@ -31,12 +31,9 @@
   }
 
   /*
-   * 1. Allow the users to scroll. If the map
-   *    fill the entire screen then the user
-   *    can only scroll on the map. So, that's
-   *    why I change the `z-index`.
+   * Allow the users to scroll on landscape mode.
    */
-  @media screen and (orientation: landscape) {
-    z-index: -1; /* 1 */
+  @media screen and (orientation: landscape) and (max-height: 31.25em) {
+    min-height: 50vh;
   }
 }
