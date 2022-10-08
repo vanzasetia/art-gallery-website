@@ -214,14 +214,6 @@ svg path {
   fill: currentColor;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /*
  * Make sure when the user disable
  * JavaScript the content is hidden.
@@ -232,39 +224,6 @@ svg path {
   display: none !important;
 }
 
-.noscript {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  z-index: 99;
-  background: rgb(58, 32, 70) url("../svg/exclamation-triangle.svg")
-    no-repeat center center/20rem;
-  padding: 0.625rem;
-  width: 100%;
-  min-height: 100vh;
-  color: rgb(255, 255, 255);
-  font: 700 2.4rem/1.2 sans-serif;
-  text-align: center;
-}
-
-@media screen and (min-width: 59.375em) {
-  .noscript {
-    background-size: 30rem;
-  }
-}
-.noscript__text {
-  margin: 2rem 0;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .noscript__text {
-    opacity: 0;
-    animation: fade-in 500ms ease-in-out 1000ms forwards;
-  }
-}
 .button {
   display: inline-block;
   position: relative;
@@ -630,10 +589,7 @@ svg path {
   width: 100%;
   min-height: 25rem;
   /*
-   * 1. Allow the users to scroll. If the map
-   *    fill the entire screen then the user
-   *    can only scroll on the map. So, that's
-   *    why I change the `z-index`.
+   * Allow the users to scroll on landscape mode.
    */
 }
 @media screen and (min-width: 44.375em) {
@@ -641,9 +597,9 @@ svg path {
     min-height: 34.375rem;
   }
 }
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-height: 31.25em) {
   .map__leaflet {
-    z-index: -1; /* 1 */
+    min-height: 50vh;
   }
 }
 
