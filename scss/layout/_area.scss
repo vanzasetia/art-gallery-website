@@ -2,11 +2,8 @@
 
 .area {
   background-color: $black;
-  color: $white;
-}
-
-.area {
   padding: rem(56) 0;
+  color: $white;
 
   @include breakpoint-up("tiny") {
     padding: rem(88) 0;

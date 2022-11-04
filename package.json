@@ -2,22 +2,23 @@
   "name": "my-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "devserver": "browser-sync start --server  --watch --port='8080' --no-inject-changes",
+    "devserver": "browser-sync start --server  --watch --port=\"8080\" --no-inject-changes",
     "watch:sass": "sass scss/main.scss css/style.css --watch --no-source-map",
     "start": "npm-run-all --parallel devserver watch:sass",
 
+    "validate:html": "html-validate ./*.html",
     "prettier": "prettier --write .",
     "semistandard:js": "semistandard --fix js/map.js",
     "sort:scss": "postcss ./scss/ --replace --config package.json",
-    "format": "npm-run-all sort:scss semistandard:js prettier",
+    "lint:scss": "stylelint \"**/*.scss\" --config ./.stylelintrc.json --fix",
+    "lint": "npm-run-all validate:html sort:scss lint:scss semistandard:js prettier",
 
     "compile:sass": "sass scss/main.scss css/style.css --no-source-map",
     "build:css": "postcss ./css/style.css -o ./css/style.min.css --use autoprefixer cssnano --no-map",
     "build:js": "terser ./js/map.js --output ./js/map.min.js --compress --mangle",
     "purify:css": "purifycss ./css/style.min.css ./index.html ./location.html --min --out ./css/style.min.css --info",
-    "ready": "npm-run-all sort:scss compile:sass build:css purify:css semistandard:js prettier build:js"
+    "ready": "npm-run-all validate:html sort:scss lint:scss compile:sass build:css purify:css semistandard:js prettier build:js"
   },
   "postcss": {
     "syntax": "postcss-scss",
@@ -28,6 +29,9 @@
       }
     }
   },
+  "browserslist": [
+    "defaults"
+  ],
   "semistandard": {
     "globals": [
       "localStorage",
@@ -42,6 +46,8 @@
     "browser-sync": "^2.27.10",
     "css-declaration-sorter": "^6.3.0",
     "cssnano": "^5.1.13",
+    "html-validate": "^7.8.0",
+    "node-css-mqpacker": "^9.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.14",
     "postcss-cli": "^10.0.0",
@@ -50,6 +56,9 @@
     "purify-css": "^1.2.5",
     "sass": "^1.54.0",
     "semistandard": "^16.0.1",
+    "stylelint": "^14.13.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^5.0.0",
     "terser": "^5.15.0"
   }
 }
