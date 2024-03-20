@@ -1,53 +1,23 @@
 ![banner](./images/banner.jpg)
 
-<p align="left">
-  <a href="https://www.frontendmentor.io/challenges?difficulties=2"><img src="https://img.shields.io/badge/Difficulty-Junior-91BD28?style=for-the-badge&logo=frontendmentor" alt="Difficulty - Junior"></a>
-  <img alt="Repo size" src="https://img.shields.io/github/repo-size/vanzasetia/art-gallery-website?style=for-the-badge&logo=github">
-  <a href="https://twitter.com/vanzasetia"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/vanzasetia/art-gallery-website?style=for-the-badge&logo=git">
-  <img alt="Netlify" src="https://img.shields.io/netlify/a6efbfba-86e6-4984-ade4-22f8e282e0de?style=for-the-badge&logo=netlify">
-  <img alt="License" src="https://img.shields.io/github/license/vanzasetia/art-gallery-website?color=green&style=for-the-badge&logo=github">
-</p>
-
-<p>
-  <a href=https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofficialartgallery.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-    </a>
-    <a href="https://github.com/standard/semistandard">
-      <img style="border:0;height:31px"
-        src="https://raw.githubusercontent.com/standard/semistandard/master/badge.svg"
-        alt="JavaScript Style Guide" />
-    </a>
-</p>
-
 # Art Gallery Website
 
-## Table of contents
-- [Overview](#overview)
-  - [Introduction](#introduction)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-  - [Screenshots](#screenshots)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Fun Fact](#fun-fact)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [License](#license)
-- [References](#references)
+## Disclaimer
+
+This project is solely for learning purposes. I take no any responsibility or liability for the accuracy, completeness, or usefulness of any information provided in this project. You should not use it as a reference for creating your project.
+
+I am currently no longer working on this project.
 
 ## Overview
-[(Back to top)](#table-of-contents)
 
 ### Introduction
+
 Welcome to the `README.md` of this repo! The purpose of creating this project is to sharpen my coding skill.
 
 Here, I will tell you everything, starting from the tools I used and much more!
 
 That's it for the introduction! **Happy reading!**
+
 ### The Challenge
 
 My challenge is to build out this art gallery website and get it looking as close to the design as possible.
@@ -61,6 +31,7 @@ My users should be able to:
 - **Bonus**: Use Leaflet JS to create an interactive location map with a custom location pin
 
 ### Links
+
 - [Live Review](https://officialartgallery.netlify.app/)
 - [Live Review (no leaflet)](https://noleaflet.netlify.app/)
 - [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/art-gallery-website-leaflet-js-rJbPrss85)
@@ -75,9 +46,9 @@ Here are the links. I use links instead of attaching the screenshots here becaus
 - [Mobile location page](./screenshots/mobile-location.jpg)
 
 ## My Process
-[(Back to top)](#table-of-contents)
 
 ### Built With
+
 - **Following best practices**\* 
 - HTML Semantic Tags
 - [BEM (Block, Element, Modifier)](https://sparkbox.com/foundry/bem_by_example) Class *Naming Convention*
@@ -257,23 +228,10 @@ I think that's it. The rest of the process of creating the map, it's pretty stra
 - [Reverse Text Color Based on Background Color Automatically in CSS | CSS-Tricks](https://css-tricks.com/reverse-text-color-mix-blend-mode/) - This is an amazing article that helped me create the reverse text color with `mix-blend-mode`. I'd recommend it to anyone who is currently doing the challenge. 
 - [OpenStreetMap](https://www.openstreetmap.org/) - This website helps me to get the coordinate numbers for 99 King Street, Newport, USA.
 
-## Author
-[(Back to top)](#table-of-contents)
-
-- Frontend Mentor - [@vanzasetia](https://frontendmentor.io/profile/vanzasetia)
-- Twitter - [@vanzasetia](https://twitter.com/vanzasetia)
-- Code Newbie - [@vanzasetia](https://community.codenewbie.org/vanzasetia)
-- Want to see me on other platform? [Check my linktree!](https://linktr.ee/vanzasetia)
-
 ## License
-[(Back to top)](#table-of-contents)
 
->You can check out [the full license](./LICENSE)
-
-This project is shared under the MIT license.
+[MIT license](./LICENSE).
 
 ## References
 
-[(Back to top)](#table-of-contents)
-
-> See the [documentation.](./docs/README.md)
+See the [documentation.](./docs/README.md)
